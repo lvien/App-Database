@@ -18,21 +18,21 @@ How to use:
   >o	Example: **_create table classmates (lname,fname,age,gender,grade)_** creates a table with respective element names.  
   
 #### •	**create table _table name_ as [select command]**
-  o	Creates named table from table defined by select command (see select command).  
-  o	Example: **_create table roll_call as select fname,lname from classmates_** will create a new table _roll_call_ with only first and last names of elements from _classmates_.  
+>o	Creates named table from table defined by select command (see select command).  
+>o	Example: **_create table roll_call as select fname,lname from classmates_** will create a new table _roll_call_ with only first and last names of elements from _classmates_.  
   
 #### •	**insert into _table name_ values _element1,element2,..._**
-  o	Inserts custom values into _table_name_'s respective table elements. Number of elements MUST be exactly the same as defined by table.  
-  o	Example **_insert into classmates Smith,Billy,14,male,9_**  
+>o	Inserts custom values into _table_name_'s respective table elements. Number of elements MUST be exactly the same as defined by table.  
+>o	Example **_insert into classmates Smith,Billy,14,male,9_**  
   
 #### •	**select _element1[,element2,…]_ from _tablename_ [where _element_ _conditional_symbol_ “_value_”]**
-  o	creates temporary table with elements from existing table with elements in custom order  
-  o	Additional conditional statement filter (i.e. adding _where fname > “A”_) will select only elements that match that condition.  
-  o	Example: **_select fname from classmates_** will display a table with only first names of all elements in table _classmates_.  
-  o	Example: **_select fname from classmates where grade > "8"_** will display a table with only students grades 9 and up, AKA high schoolers.  
+>o	creates temporary table with elements from existing table with elements in custom order  
+>o	Additional conditional statement filter (i.e. adding _where fname > “A”_) will select only elements that match that condition.  
+>o	Example: **_select fname from classmates_** will display a table with only first names of all elements in table _classmates_.  
+>o	Example: **_select fname from classmates where grade > "8"_** will display a table with only students grades 9 and up, AKA high schoolers.  
   
 #### •	**load _table_name_**
-  o	Loads saved table into program database. Error message will display if table doesn't exist.  
-  o	table _employee_ is already included, and can be loaded.  
-  o	Example: **_load employee_** loads _employee.tbl_ into program database.
+>o	Loads saved table into program database. Error message will display if table doesn't exist.  
+>o	table _employee_ is already included, and can be loaded.  
+>o	Example: **_load employee_** loads _employee.tbl_ into program database.
 
