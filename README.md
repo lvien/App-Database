@@ -14,8 +14,8 @@ How to use:
 
 #### Commands
 #### •	**create table _table name_ (_element 1[,element 2,element 3,...]_)**
-  o	Creates named table, which can then be printed, modified, loaded, and selected. Table file is automatically written after creation.  
-  o	Example: **_create table classmates (lname,fname,age,gender,grade)_** creates a table with respective element names.  
+  >o	Creates named table, which can then be printed, modified, loaded, and selected. Table file is automatically written after creation.  
+  >o	Example: **_create table classmates (lname,fname,age,gender,grade)_** creates a table with respective element names.  
   
 #### •	**create table _table name_ as [select command]**
   o	Creates named table from table defined by select command (see select command).  
