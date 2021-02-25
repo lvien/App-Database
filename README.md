@@ -13,20 +13,24 @@ How to use:
 4. Press _return_  
 
 #### Commands
-•	**create table _table name_ (_element 1[,element 2,element 3,...]_)**  
+#### •	**create table _table name_ (_element 1[,element 2,element 3,...]_)**  
   o	Creates named table, which can then be printed, modified, loaded, and selected. Table file is automatically written after creation.  
   o	Example: **_create table classmates (lname,fname,age,gender,grade)_** creates a table with respective element names  
-•	**create table _table name_ as [select command]**  
+  
+#### •	**create table _table name_ as [select command]**  
   o	Creates named table from table defined by select command (see select command)  
   o	Example: **_create table roll_call as select fname,lname from classmates_** will create a new table _roll_call_ with only first and last names of elements from _classmates_  
   
-•	**insert into _table name_ values _element1,element2,..._**  
+#### •	**insert into _table name_ values _element1,element2,..._**  
   o	Inserts custom values into _table_name_'s respective table elements. Number of elements MUST be exactly the same as defined by table  
   o	Example **_insert into classmates Smith,Billy,14,male,9_**  
-•	**select _element1[,element2,…]_ from _tablename_ [where _element_ _conditional_symbol_ “_value_”]**  
+  
+#### •	**select _element1[,element2,…]_ from _tablename_ [where _element_ _conditional_symbol_ “_value_”]**  
   o	creates temporary table with elements from existing table with elements in custom order  
   o	Additional conditional statement filter (i.e. adding _where fname > “A”_ will select only elements where fname is greater than value “A”)  
-  o	Example: _select fname from classmates_ will display a table with only first names of all elements in table _classmates_  
-•	**load _table_name_**  
+  o	Example: **_select fname from classmates_** will display a table with only first names of all elements in table _classmates_  
+  o	Example: **_select fname from classmates where grade > "8"_** will display a table with only students grades 9 and up, AKA high schoolers.  
+  
+#### •	**load _table_name_**  
   o	Loads saved table into program database. Error message will display if table doesn't exist.
 
