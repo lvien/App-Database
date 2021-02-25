@@ -1,7 +1,7 @@
 # Record Table Database
 #### Designer: Andrew Vien
 #### Concepts: C++ Fundamentals of Data Structures  
-#### Made with: Qt Creator editor.
+#### Made with: Qt Creator editor
 
 Executable C++ application that creates records database based on user command input. Database includes elements which can be dynamically modified, and efficient search algorithms for conditional values. Additional database tables can be created through user-defined search filtering. 
 Program involves SQL command parsing, custom multi maps (without multi map plugin) through linked lists and BPlus Trees, and file reading/writing.  
